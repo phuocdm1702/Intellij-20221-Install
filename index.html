@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,141 +8,203 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1000px;
+            /* Increased for wider layout */
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             line-height: 1.6;
             color: #333;
+            background-color: #f9f9f9;
         }
+
         h1 {
             color: #2c3e50;
             text-align: center;
             border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            font-size: 2.2em;
         }
+
         h2 {
             color: #2980b9;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-size: 1.8em;
         }
+
         h3 {
             color: #34495e;
+            font-size: 1.4em;
         }
+
         p {
             margin: 10px 0;
         }
+
         img {
-            max-width: 100%;
+            max-width: 80%;
+            /* Slightly reduced to fit wider layout */
             height: auto;
             display: block;
-            margin: 10px auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            margin: 15px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Added shadow for clarity */
         }
+
         pre {
             background: #f4f4f4;
             padding: 15px;
             border-radius: 5px;
             overflow-x: auto;
             font-size: 14px;
+            position: relative;
         }
+
         code {
             font-family: 'Courier New', Courier, monospace;
         }
-        ul, ol {
+
+        ul,
+        ol {
             margin: 10px 0;
             padding-left: 30px;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
+
         .warning {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 15px;
-            margin: 15px 0;
+            margin: 20px 0;
             border-radius: 5px;
         }
+
         .note {
             font-style: italic;
             color: #555;
+            text-align: center;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .copy-button:hover {
+            background: #2980b9;
         }
     </style>
 </head>
+
 <body>
     <h1>Hướng dẫn cài đặt IntelliJ IDEA 2021</h1>
-    <p>Hướng dẫn này giúp bạn cài đặt IntelliJ IDEA 2021 trên Windows một cách dễ dàng, kèm theo hướng dẫn kích hoạt bản quyền. Các bước được minh họa bằng hình ảnh để dễ theo dõi.</p>
+    <p>Hướng dẫn này giúp bạn cài đặt IntelliJ IDEA 2021 trên Windows một cách dễ dàng, kèm theo hướng dẫn kích hoạt bản
+        quyền. Các bước được minh họa bằng hình ảnh để dễ theo dõi.</p>
 
     <h2>Bước 1: Tải và cài đặt IntelliJ IDEA 2021</h2>
     <h3>1. Tải file cài đặt</h3>
     <ul>
-        <li>Truy cập link driver sau để tải IntelliJ IDEA 2021.1.</li>
-        <li>Tải file <link href="https://drive.google.com/drive/folders/1vS_7Ik53ci72RoPHCnreSccUl2brWj1o?usp=sharing">.</li>
+        <li>Truy cập link dưới đây để tải IntelliJ IDEA 2021.1.</li>
+        <li>Nhấn để tải file: <a
+                href="https://drive.google.com/drive/folders/1vS_7Ik53ci72RoPHCnreSccUl2brWj1o?usp=sharing">Tại đây</a>
+        </li>
     </ul>
 
     <h3>2. Giải nén và cài đặt</h3>
     <ul>
         <li>Giải nén file <code>JetBrains IntelliJ IDEA Ultimate 2021.1.zip</code> vừa tải về.</li>
         <li>Chạy file <code>ideaIU-2021.exe</code>.</li>
-        <li>Nhấn <strong>Next</strong> qua các màn hình cài đặt hoặc tùy chỉnh theo nhu cầu:
-            <ul>
-                <img src="img_intellij/img_1.png" alt="Chọn Next">
-                <li>Chọn<strong>Next</strong></li>
-                <img src="img_intellij/img_2.png" alt="Tùy chọn cài đặt">
-                <li>Chọn các tùy chọn như tạo shortcut, hỗ trợ 64-bit, liên kết với các loại file (.java, .py, .xml, v.v.).</li>
-                <img src="img_intellij/img_3.png" alt="Tạo shortcut">
-                <li>Nhấn <strong>Install</strong> và chờ hoàn tất.</li>
-                <img src="img_intellij/img_4.png" alt="Liên kết file">
-                <li>Nhấn <strong>Install</strong> và chờ hoàn tất.</li>
-                <img src="img_intellij/img_5.png" alt="Xác nhận cài đặt">
-                <li>Nhấn <strong>Install</strong> và chờ hoàn tất.</li>
-                <img src="img_intellij/img_6.png" alt="Hoàn tất cài đặt">
-                <li>Chọn <strong>Finish</strong> khi hoàn tất (không cần khởi động IntelliJ ngay).</li>
-            </ul>
-        </li>
+        <li>Nhấn <strong>Next</strong> qua các màn hình cài đặt hoặc tùy chỉnh theo nhu cầu:</li>
+        <ul>
+            <img src="img_intellij/img_1.png" alt="Chọn Next">
+            <li>Nhấn <strong>Next</strong> để tiếp tục.</li>
+            <img src="img_intellij/img_2.png" alt="Tùy chọn cài đặt">
+            <li>Nhấn <strong>Next</strong> hoặc tùy chỉnh theo nhu cầu cá nhân.</li>
+            <img src="img_intellij/img_3.png" alt="Tạo shortcut">
+            <li>Chọn các tùy chọn như tạo shortcut, hỗ trợ 64-bit, liên kết với các loại file (.java, .py, .xml, v.v.).
+            </li>
+            <img src="img_intellij/img_4.png" alt="Liên kết file">
+            <li>Nhấn <strong>Install</strong> để bắt đầu cài đặt.</li>
+            <img src="img_intellij/img_5.png" alt="Chờ cài chương trình">
+            <li>Chờ chương trình hoàn tất cài đặt.</li>
+            <img src="img_intellij/img_6.png" alt="Hoàn tất cài đặt">
+            <li>Chọn <strong>Finish</strong> khi hoàn tất (không cần khởi động IntelliJ ngay).</li>
+        </ul>
     </ul>
-   
 
     <h2>Bước 2: Cài đặt plugin kích hoạt</h2>
     <h3>1. Tải và sao chép plugin</h3>
     <ul>
-        <li>Tải file <code>BetterIntelliJ-1.20.jar</code> từ nguồn đáng tin cậy (kiểm tra kỹ để tránh mã độc).</li>
-        <li>Mở file nén chứa <code>BetterIntelliJ-1.20.jar</code> (thường trong thư mục <code>Licenses > JetBrains BetterIntelliJ v1.20</code>).</li>
-        <li>Sao chép file <code>BetterIntelliJ-1.20.jar</code> vào ổ <strong>C:\</strong> (đường dẫn: <code>C:\BetterIntelliJ-1.20.jar</code>).</li>
-        <li>Nếu xuất hiện thông báo lỗi khi sao chép, nhấn <strong>Skip</strong> hoặc <strong>Ignore</strong>.</li>
+        <li>Mở file vừa giải nén <code>JetBrains IntelliJ IDEA Ultimate 2021.1</code>.</li>
+        <li>Tìm file <code>BetterIntelliJ-1.20.jar</code> trong thư mục
+            <code>Licenses > JetBrains BetterIntelliJ v1.20</code>.
+        </li>
+        <li>Sao chép file <code>BetterIntelliJ-1.20.jar</code> vào ổ <strong>C:\</strong> (đường dẫn:
+            <code>C:\BetterIntelliJ-1.20.jar</code>).
+        </li>
+        <img src="img_intellij/img_7.png" alt="Sao chép file plugin">
+        <li>Nếu xuất hiện thông báo lỗi khi dán vào ổ <strong>C:\</strong> (như hình trên), nhấn <strong>Skip</strong>
+            hoặc <strong>Ignore</strong>.</li>
     </ul>
 
     <h3>2. Cài đặt plugin trong IntelliJ</h3>
     <ul>
         <li>Mở IntelliJ IDEA 2021.</li>
+        <li>Tùy thuộc vào giao diện, thực hiện một trong hai cách sau:</li>
+        <img src="img_intellij/img_8_intellij.png" alt="Màn hình chính Plugins">
         <li>Nếu ở màn hình chính, vào <strong>Configure > Plugins</strong>.</li>
+        <img src="img_intellij/img_9_intellij.png" alt="Settings Plugins">
         <li>Nếu đang mở một dự án, vào <strong>File > Settings > Plugins</strong>.</li>
-        <li><img src="media/image7.png" alt="Màn hình Plugins"></li>
-        <li><img src="media/image8.png" alt="Cài đặt Plugins"></li>
+        <img src="img_intellij/img_10_intellij.png" alt="Install Plugin from Disk">
         <li>Chọn <strong>Install Plugin from Disk</strong>.</li>
-        <li>Duyệt đến file <code>C:\BetterIntelliJ-1.20.jar</code> và nhấn <strong>OK</strong>.</li>
-        <li><img src="media/image9.png" alt="Chọn file plugin"></li>
+        <img src="img_intellij/img_11_intellij.png" alt="Chọn BetterIntelliJ-1.20.jar">
+        <li>Duyệt đến file <code>BetterIntelliJ-1.20.jar</code> trong thư mục đã giải nén và nhấn <strong>OK</strong>.
+        </li>
+        <img src="img_intellij/img_12_intellij.png" alt="Lưu cài đặt Plugins">
         <li>Nhấn <strong>OK</strong> để lưu (không khởi động lại IntelliJ nếu được hỏi).</li>
     </ul>
 
     <h3>3. Cấu hình plugin</h3>
     <ul>
-        <li>Vào menu <strong>Configure</strong> hoặc <strong>Help</strong> > <strong>Edit Custom VM Options</strong>.</li>
-        <li><img src="media/image10.png" alt="Edit Custom VM Options"></li>
+        <img src="img_intellij/img_13_intellij.png" alt="Edit Custom VM Options">
+        <li>Vào menu <strong>Configure</strong> hoặc <strong>Help</strong> > <strong>Edit Custom VM Options</strong>.
+        </li>
+        <img src="img_intellij/img_14_intellij.png" alt="Cấu hình VM Options">
         <li>Thêm dòng sau vào cuối file:</li>
-        <pre><code>-javaagent:C:\BetterIntelliJ-1.20.jar</code></pre>
-        <li><img src="media/image11.png" alt="Ví dụ cấu hình VM Options"></li>
+        <pre><code>-javaagent:C:/Users/ADMIN/Downloads/JetBrains IntelliJ IDEA Ultimate 2021.1/JetBrains IntelliJ IDEA Ultimate
+        2021.1/Licenses/JetBrains BetterIntelliJ v1.20/BetterIntelliJ-1.20.jar</code></pre>
+        <li>Bạn có thể sao chép đường dẫn của file <code>BetterIntelliJ-1.20.jar</code> từ thư mục đã giải nén và sửa
+            như ví dụ trên.</li>
         <li>Lưu file và khởi động lại IntelliJ.</li>
     </ul>
 
     <h2>Bước 3: Kích hoạt bản quyền</h2>
     <h3>1. Thêm mã kích hoạt</h3>
     <ul>
+        <img src="img_intellij/img_15_intellij.png" alt="Manage License">
         <li>Vào <strong>Configure > Manage License</strong>.</li>
+        <img src="img_intellij/img_16_intellij.png" alt="Add New License">
         <li>Chọn <strong>Add New License > Activation Code</strong>.</li>
-        <li>Sao chép và dán mã kích hoạt sau:</li>
-        <pre><code>BISACXYELK-eyJsaWNlbnNlSWQiOiJCSVNBQ1hZRUxLIiwibGljZW5zZWVOYW1lIjoiQ2hpbmFOQiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiRFBOIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNGIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJETSIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlMwIiwicGFpZDVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJEIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJQQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNWIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTVSIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUk0iLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUERCIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBXUyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQR08iLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBQQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUkIiLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlnmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFNXIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkRQIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwNzI4RVBKQTAwODAwNiIsImhhc2giOiIxNTAyMTM1NC8wOi0xMjUxMTE0NzE3IiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-H7NUmWcLyUNV1ctnlzc4P79j15qL56G0jeIYWPk/HViNdMg1MqPM7BR+aHR28yyuxK7Odb2bFDS8CeHNUtv7nT+4fUs85JJiqc3wc1psRpZq5R77apXLOmvmossWpbAw8T1hOGV9IPUm1f2O1+kLBxrOkdqPpv9+JanbdL7bvchAid2v4/dyQMBYJme/feZ0Dy2l7Jjpwno1TeblEAu0KZmarEo15or5RUNwtaGBL5+396TLhnw1qL904/uPnGftjxWYluLjabO/uRu/+5td8UA/39a1nvGU2nORNLk2IdRGIheiwIiuirAZrII9+OxB+p52i3TIv7ugtkw0E3Jpkw==-MIIDlzCCAn+gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDEw1KZXRQcm9maWxlIENBMCAXDTE4MTEwMTEyMjk0NloYDzIwOTkwODA5MDIyNjA3WjBoMQswCQYDVQQGEwJDWjEOMAwGA1UECBMFTnVzbGUxDzANBgNVBAcTBlByYWd1ZTEZMBcGA1UEChMQSmV0QnJhaW5zIHMuci5vLjEdMBsGA1UEAxMUcHJvZDN5LWZyb20tMjAxODExMDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdXyaNhhRySH1a8d7c8SlLLFdNcQP8M3gNnq7gudcpHC651qxRrN7Qks8gdXlIkA4u3/lp9ylp95GiIIDo4ydYje8vlTWDq02bkyWW/G7gZ3hkbBhRUK/WnNyr2vwWoOgwx5CfTRMjKkPkfD/+jffkfNfdGmGcg9yfnqPP9/AizKzWTsXSeS+0jZ8Nw5tiYFW+lpceqlzwzKdTHug7Vs0QomUPccRtZB/TBBEuiC7YzrvLg4Amu0I48ETAcch/ztt00nx/oj/fu1DTnz4Iz4ilrNY+WVIEfDz/n3mz+PKI9kM+ZeB0jAuyLsiC7skGpIVGX/2HqmZTtJKBZCoveAiVAgMBAAGjgZkwgZYwSAYDVR0jBEEwP4AUo562SGdCEjZBvW3gubSgUouX8bOhHKQaMBgxFjAUBgNVBAMMDUpldFByb2ZpbGUgQ0GCCQDSbLGDsoN54TAJBgNVHRMEAjAAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAdBgNVHQ4EFgQUYSkb2hkZx8swY0GRjtKAeIwaBNwwDQYJKoZIhvcNAQELBQADggEBAJZOakWgjfY359glviVffBQFxFS6C+4WjYDYzvzjWHUQoGBFKTHG4xUmTVW7y5GnPSvIlkaj49SzbD9KuiTc77GHyFCTwYMz+qITgbDg3/ao/x/be4DD/k/byWqW4Rb8OSYCshX/fNI4Xu+hxazh179taHX4NaH92ReLVyXNYsooq7mE5YhR9Qsiy35ORviQLrgFrMCGCxT9DWlFBuiPWIOqN544sL9OzFMz+bjqjCoAE/xfIJjI7H7SqGFNrx/8/IuF0hvZbO3bLIz+BOR1L2O+qT728wK6womnp2LLANTPbwu7nf39rpP182WW+xw2z9MKYwwMDwGR1iTYnD4/Sjw=</code></pre>
+        <li>Sao chép và dán mã kích hoạt sau hoặc copy trong notes ở file
+            <code>Licenses > JetBrains BetterIntelliJ v1.20</code>:</li>
+        <pre
+            id="activation-code">BISACXYELK-eyJsaWNlbnNlSWQiOiJCSVNBQ1hZRUxLIiwibGljZW5zZWVOYW1lIjoiQ2hpbmFOQiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiRFBOIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNGIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJETSIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlMwIiwicGFpZDVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJEIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJQQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUlNWIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTVSIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUk0iLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUERCIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBXUyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQR08iLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBQQyIsInBhaWRVcFRvIjoiMjA5OS0xMi0zMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUkIiLCJwYWlkVXBUbyI6IjIwOTktMTItMzEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFNXIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkRQIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlJTIiwicGFpZFVwVG8iOiIyMDk5LTEyLTMxIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwNzI4RVBKQTAwODAwNiIsImhhc2giOiIxNTAyMTM1NC8wOi0xMjUxMTE0NzE3IiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-H7NUmWcLyUNV1ctnlzc4P79j15qL56G0jeIYWPk/HViNdMg1MqPM7BR+aHR28yyuxK7Odb2bFDS8CeHNUtv7nT+4fUs85JJiqc3wc1psRpZq5R77apXLOmvmossWpbAw8T1hOGV9IPUm1f2O1+kLBxrOkdqPpv9+JanbdL7bvchAid2v4/dyQMBYJme/feZ0Dy2l7Jjpwno1TeblEAu0KZmarEo15or5RUNwtaGBL5+396TLhnw1qL904/uPnGftjxWYluLjabO/uRu/+5td8UA/39a1nvGU2nORNLk2IdRGIheiwIiuirAZrII9+OxB+p52i3TIv7ugtkw0E3Jpkw==-MIIDlzCCAn+gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDEw1KZXRQcm9maWxlIENBMCAXDTE4MTEwMTEyMjk0NloYDzIwOTkwODA5MDIyNjA3WjBoMQswCQYDVQQGEwJDWjEOMAwGA1UECBMFTnVzbGUxDzANBgNVBAcTBlByYWd1ZTEZMBcGA1UEChMQSmV0QnJhaW5zIHMuci5vLjEdMBsGA1UEAxMUcHJvZDN5LWZyb20tMjAxODExMDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdXyaNhhRySH1a8d7c8SlLLFdNcQP8M3gNnq7gudcpHC651qxRrN7Qks8gdXlIkA4u3/lp9ylp95GiIIDo4ydYje8vlTWDq02bkyWW/G7gZ3hkbBhRUK/WnNyr2vwWoOgwx5CfTRMjKkPkfD/+jffkfNfdGmGcg9yfnqPP9/AizKzWTsXSeS+0jZ8Nw5tiYFW+lpceqlzwzKdTHug7Vs0QomUPccRtZB/TBBEuiC7YzrvLg4Amu0I48ETAcch/ztt00nx/oj/fu1DTnz4Iz4ilrNY+WVIEfDz/n3mz+PKI9kM+ZeB0jAuyLsiC7skGpIVGX/2HqmZTtJKBZCoveAiVAgMBAAGjgZkwgZYwSAYDVR0jBEEwP4AUo562SGdCEjZBvW3gubSgUouX8bOhHKQaMBgxFjAUBgNVBAMMDUpldFByb2ZpbGUgQ0GCCQDSbLGDsoN54TAJBgNVHRMEAjAAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAdBgNVHQ4EFgQUYSkb2hkZx8swY0GRjtKAeIwaBNwwDQYJKoZIhvcNAQELBQADggEBAJZOakWgjfY359glviVffBQFxFS6C+4WjYDYzvzjWHUQoGBFKTHG4xUmTVW7y5GnPSvIlkaj49SzbD9KuiTc77GHyFCTwYMz+qITgbDg3/ao/x/be4DD/k/byWqW4Rb8OSYCshX/fNI4Xu+hxazh179taHX4NaH92ReLVyXNYsooq7mE5YhR9Qsiy35ORviQLrgFrMCGCxT9DWlFBuiPWIOqN544sL9OzFMz+bjqjCoAE/xfIJjI7H7SqGFNrx/8/IuF0hvZbO3bLIz+BOR1L2O+qT728wK6womnp2LLANTPbwu7nf39rpP182WW+xw2z9MKYwwMDwGR1iTYnD4/Sjw=</pre>
+        <button class="copy-button" onclick="copyCode()">Sao chép mã</button>
         <li>Nhấn <strong>OK</strong> để kích hoạt.</li>
     </ul>
+    <img src="img_intellij/img_17_intellij.png" alt="Kích hoạt bản quyền">
 
     <h3>2. Kiểm tra</h3>
     <ul>
@@ -150,8 +213,8 @@
 
     <h2>Lưu ý</h2>
     <div class="warning">
-        <p><strong>Tính pháp lý</strong>: Sử dụng mã kích hoạt hoặc plugin crack có thể vi phạm điều khoản của JetBrains. Hãy cân nhắc dùng phiên bản miễn phí hoặc mua bản quyền chính thức.</p>
-        <p><strong>An toàn</strong>: Đảm bảo tải file từ nguồn uy tín để tránh virus hoặc mã độc.</p>
+        <p><strong>Đọc trước khi thực hiện!</strong></p>
+        <p><strong>An toàn</strong>: Đảm bảo tải file từ link Google Drive ở trên để tránh virus hoặc mã độc.</p>
         <p><strong>Sao lưu</strong>: Lưu lại mã kích hoạt ở nơi an toàn để sử dụng sau này.</p>
         <p><strong>Khắc phục lỗi</strong>:</p>
         <ul>
@@ -161,5 +224,17 @@
     </div>
 
     <p class="note">Chúc bạn cài đặt thành công!</p>
+
+    <script>
+        function copyCode() {
+            const code = document.getElementById('activation-code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Mã kích hoạt đã được sao chép!');
+            }).catch(err => {
+                alert('Lỗi khi sao chép mã: ' + err);
+            });
+        }
+    </script>
 </body>
+
 </html>
